@@ -295,3 +295,10 @@ done
 
 progresso
 
+# Finalizando os nós
+
+./freechains-host stop --port=8331
+./freechains-host stop --port=8332
+./freechains-host stop --port=8333
+./freechains-host stop --port=8334
+
