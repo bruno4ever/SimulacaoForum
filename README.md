@@ -13,7 +13,7 @@ Essa simulação foi criada para analisar o comportamento desse fórum público 
 
 ### Bruno (porta 8331)
 
-Usuário pioneiro do fórum e bastante ativo, compartilha histórias de terror (próprias e creepypastas) e incentiva novos usuários e avalia frequentemente as outras histórias.
+Usuário pioneiro do fórum e bastante ativo, compartilha histórias de terror (próprias e creepypastas), incentiva novos usuários e avalia frequentemente as outras histórias.
 
 ---
 
