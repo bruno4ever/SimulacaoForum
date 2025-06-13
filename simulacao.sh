@@ -88,12 +88,15 @@ done
 
 # Iniciando posts --  Bruno posta sempre pela porta 8331 -- Thiago pela porta 8332 -- Isabela pela porta 8333 -- Ricardo pela porta 8334
 
+# Bruno posta a primeira história do fórum
 postbruno "Uma vez eu estava escutando meu irmao me chamar no andar de baixo da minha casa, quando lembrei que meu irmao estava na escola.."
 sinc 8331
 
+# Thiago, que é novato, posta uma história incompleta
 POST=$(postthiago "Sou novo aqui.. essa é minha primeira história. Ouvi passos atras de mim na floresta, e quando olhei pra tras..")
 sinc 8332
 
+# Bruno corrige e da like na história para incentivar thiago
 likebruno "$POST"
 sinc 8331
 postbruno "Historia ta meio incompleta.. mas voce aprende com o tempo"
@@ -108,17 +111,21 @@ done
 
 progresso
 
+# Ricardo faz uma publicaçao tóxica na rede -- Bruno e thiago dao dislikes no seu post
 POST=$(postricardo "HAHAHAH FORUM IDIOTA, SÓ HISTORIA FALSA.")
 sinc 8334
 dislikebruno "$POST"
 sinc 8331
 dislikethiago "$POST"
 sinc 8332
+
+#  Thiago posta comentário repreendendo ricardo -- Bruno da like no post de thiago
 POST=$(postthiago "Se ta tao incomodado assim sai do fórum")
 sinc 8332
 likebruno "$POST"
 sinc 8331
 
+# Avançando 7 dias
 TIMESTAMP=$((TIMESTAMP + 604800000))
 for PORT in $(seq 8331 8334); do
     echo "Avançando os dias na porta $PORT"
@@ -127,16 +134,22 @@ done
 
 progresso
 
+# Thiago posta uma história melhor, se adaptando ao fórum. ---- Bruno e Isabela curtem sua história
+
 POST=$(postthiago "Dormi na casa do meu primo e ouvi alguém sussurrando meu nome. Ele disse que a vó dele também ouve.")
 sinc 8332
 likebruno "$POST"
 sinc 8331
 likeisa "$POST"
 sinc 8333
+
+# Isabela faz um comentário elogiando a história do thiago --- Thiago da um like no comentário
 POST=$(postisa "Ótima história")
 sinc 8333
 likethiago "$POST"
 sinc 8332
+
+# Ricardo faz um comentário maldoso --- Bruno, Thiago e Isabela dao dislikes em seu post
 POST=$(postricardo "Isso foi horrível, voces sentem medo de qualquer coisa")
 sinc 8334
 dislikethiago "$POST"
@@ -146,6 +159,8 @@ sinc 8331
 dislikeisa "$POST"
 sinc 8333
 
+
+# Avançando um dia
 TIMESTAMP=$((TIMESTAMP + 90000000))
 for PORT in $(seq 8331 8334); do
     echo "Avançando os dias na porta $PORT"
@@ -154,6 +169,7 @@ done
 
 progresso
 
+# Isabela, tímida e um pouco inativa, resolve postar uma história -- Bruno e Thiago dao like na sua história
 POST=$(postisa "Não sou muito de postar histórias, gosto mais de ler.. mas aqui vai: Quando eu era criança, acordei de madrugada e vi alguém parado no corredor. Pensei que era minha mãe, mas ela estava dormindo no quarto.")
 sinc 8333
 likebruno "$POST"
@@ -170,6 +186,7 @@ done
 
 progresso
 
+# Bruno posta mais uma história -- Thiago da like e comenta
 POST=$(postbruno "Pra dar uma movimentada por aqui.. Era uma vez, Jorge, uma criança curiosa. Um dia, Jorge levantou de noite e ouviu passos que não conseguia ver. Jorge nunca mais levantou durante a noite.")
 sinc 8331
 likethiago "$POST"
@@ -179,7 +196,6 @@ sinc 8332
 
 
 # Avançando 15 dias
-
 TIMESTAMP=$((TIMESTAMP + 1296000000))
 for PORT in $(seq 8331 8334); do
     echo "Avançando os dias na porta $PORT"
@@ -188,8 +204,11 @@ done
 
 progresso
 
+# Bruno posta uma pergunta para outros usuários
 postbruno "Já tiveram paralisia do sono? Se sim, compartilhe os detalhes."
 sinc 8331
+
+# Thiago responde contando sua experciencia -- Bruno da like no seu post
 POST=$(postthiago "Teve uma vez que eu acordei e senti como se alguém estivesse sentado no meu peito. Eu não conseguia me mexer e nem falar.")
 sinc 8332
 likebruno "$POST"
@@ -204,16 +223,21 @@ done
 
 progresso
 
+# Thiago posta uma creepypasta --- Bruno da like em seu post
 POST=$(postthiago "Toda madrugada, quando dava 03:00, a TV de uma casa ligava sozinha, no mesmo canal.")
 sinc 8332
 likebruno "$POST"
 sinc 8331
+
+# Ricardo posta comentário descredibilizando a história -- Bruno e Thiago dao dislikes em seu post
 POST=$(postricardo "KKKK isso que dá usar uma TV velha, que creepypasta idiota.")
 sinc 8334
 dislikebruno "$POST"
 sinc 8331
 dislikethiago "$POST"
 sinc 8332
+
+# Thiago repreende Ricardo
 postthiago "Cara, voce não se cansa.."
 sinc 8332
 
@@ -226,21 +250,25 @@ done
 
 progresso
 
+# Thiago, que ja se tornou um membro bastante ativo, posta uma nova história -- Isa da like no seu post
 POST=$(postthiago "No velório, alguém bateu de dentro do caixão. Todos ouviram. Quando abriram, não havia mais corpo.")
 sinc 8332
 likeisa "$POST"
 sinc 8333
+
+# Isabela comenta o post de Thiago, agradecendo pelas histórias -- Bruno e Thiago se comovem e dao like no comentário da Isabela
 POST=$(postisa "Gosto muito de ler essas histórias no trem, indo para minha faculdade. Obrigada por animarem minha viagem!")
 sinc 8333
 likebruno "$POST"
 sinc 8331
 likethiago "$POST"
 sinc 8332
+
+# Thiago reage ao comentário da Isabela
 postthiago "Bom saber que consegui pegar o jeito das histórias."
 sinc 8332
 
 # Avançando 15 dias
-
 TIMESTAMP=$((TIMESTAMP + 1296000000))
 for PORT in $(seq 8331 8334); do
     echo "Avançando os dias na porta $PORT"
@@ -249,6 +277,7 @@ done
 
 progresso
 
+# Ricardo posta uma história com uma reviravolta ridicula para incomodar os usuários -- Bruno da dislike em seu post
 POST=$(postricardo "Era uma vez um fantasma parado em frente a uma casa... até descobrirem que era só uma roupa no varal.")
 sinc 8334
 dislikebruno "$POST"
@@ -263,8 +292,10 @@ done
 
 progresso
 
+# Thiago também da dislike no post de Ricardo
 dislikethiago "$POST"
 sinc 8332
+# Thiago posta mais uma creepypasta -- Bruno e Isabela dao likes em seu post
 POST=$(postthiago "Marina gostava de fazer passeios a noite com seu cachorro. Um dia, quando voltou pra casa, um estranho tentou seguir ela até em casa. Não devemos temer só os fantasmas..")
 sinc 8332
 likeisa "$POST"
@@ -281,12 +312,13 @@ done
 
 progresso
 
+# Thiago posta mais uma história -- Bruno da like em seu post
 POST=$(postthiago "Um menino foi tentar brincar de loira do banheiro.. e começou a ouvir barulhos vindo de uma das cabines. Ele saiu correndo na mesma hora.")
 sinc 8332
 likebruno "$POST"
 sinc 8331
 
-# Avançando 4 dias
+# Avançando 4 dias -- Dia 90 alcançado -- Fim da simulaçao
 TIMESTAMP=$((TIMESTAMP + 345600000))
 for PORT in $(seq 8331 8334); do
     echo "Avançando os dias na porta $PORT"
