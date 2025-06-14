@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Declarando Alias para posts -- checagem de reputaçoes -- like em posts -- deslike em posts
+# Declarando Alias para posts -- checagem de reputaçoes -- like em posts -- dislike em posts
 
 postricardo() { ./freechains --host=localhost:8334 chain '#terror' post --sign=939068E40CDA4DD255F5BE4651C679D61306E4E652BC9C8F13AC770E6735C73A04E7F4EF7C0761882955FDFFD3F78698F2A4DB0460FDBC3211A7178E4B37ADD9 inline "$*"; }
 
