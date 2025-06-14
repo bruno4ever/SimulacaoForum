@@ -208,7 +208,7 @@ progresso
 postbruno "Já tiveram paralisia do sono? Se sim, compartilhe os detalhes."
 sinc 8331
 
-# Thiago responde contando sua experciencia -- Bruno da like no seu post
+# Thiago responde contando sua experiencia -- Bruno da like no seu post
 POST=$(postthiago "Teve uma vez que eu acordei e senti como se alguém estivesse sentado no meu peito. Eu não conseguia me mexer e nem falar.")
 sinc 8332
 likebruno "$POST"
